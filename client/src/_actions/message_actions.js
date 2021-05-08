@@ -1,11 +1,8 @@
-import {
-    SAMPLE,
-} from './types';
+import * as actions from './types';
 
-export function sample(dataToSubmit) {
-   
-    return {
-        type: SAMPLE,
-        payload: dataToSubmit
-    }
+export function saveMessage(dataToSubmit) {
+  return {
+    type: actions.SAVE_MESSAGE,
+    payload: dataToSubmit,
+  };
 }
